@@ -15,11 +15,9 @@ body {
   background: linear-gradient(135deg, #4caf50 0%, #81c784 100%);
   color: #222;
   margin: 0;
-  padding: 0; /* Remove hard padding */
+  padding: 1rem 0;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  text-align: center;  /* Center content horizontally */
 }
 
 .container {
@@ -31,8 +29,8 @@ body {
   box-shadow: 0 8px 16px rgba(0,0,0,0.15);
   margin: 1rem;
   position: relative;
+  flex-shrink: 0;
 }
-
 h1, h2 {
   text-align: center;
   color: #2e7d32;
@@ -334,6 +332,7 @@ ul#history::-webkit-scrollbar-thumb {
 
   .container {
     margin: 0;
+    max-width: 100%;
     border-radius: 0;
     box-shadow: none;
     min-height: 100vh;
